@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SignMein</title>
+</head>
+<body>
+    <div class="main">
+        <div class="Top-flex">
+            <div class="block">
+                <h4>Select Text Colour</h4>
+                <input class="color" type="color"  id="selectColour">
+            </div>
+            <div class="block">
+                <h4>Select Background Colour</h4>
+                <input class="color" type="color" id="selectBG">
+            </div>
+            <div class="block">
+                <h4>Font Size</h4>
+                <select class="fontSize" id="fontSize" type="select">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="15">15px</option>
+                    <option value="20">20px</option>
+                    <option value="40">40px</option>
+                </select>
+            </div>
+                
+
+        </div>
+        <canvas class="signatureCanvas" id="sigCanvas" width="700" height="500">
+            </canvas>
+        <input type="file" id="pdfInput" accept="application/pdf" style="display: none;" />
+
+        <div class="Bottom-flex">
+            <button type="button" class="clear" id="clearbtn">Clear</button>
+            <button type="button" class="Download" id="save&download">Save & Download</button>
+            <button type="button" class="retrive" id = "retrieveSign">Retrieve</button>
+            <button type="button" class="pdffrom" id="from">insertPdf</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

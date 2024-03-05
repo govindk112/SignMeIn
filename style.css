@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.Top-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.block {
+    flex: 0 0 calc(33.333% - 10px);
+}
+
+.block h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.color, .fontSize {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.color:focus, .fontSize:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.signatureCanvas {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.Bottom-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.clear, .Download, .retrive ,.pdffrom{
+    padding: 12px 24px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.clear:hover, .Download:hover, .retrive:hover,.pdffrom:hover {
+    background-color: #0056b3;
+}
+
+.selectBG {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.selectBG:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.clear {
+    background-color: #dc3545;
+}
+
+.clear:hover {
+    background-color: #c82333; 
+}
+
+
+.Download {
+    background-color: #28a745; 
+}
+
+.Download:hover {
+    background-color: #218838; 
+}
+.retrive {
+    background-color: #ffc107; 
+}
+
+.retrive:hover {
+    background-color: #e0a800; 
+}
+
